@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css.css" />
+</head>
+<body>
+
+    <main class="tela-principal">
+
+        <section class='conteudos'>
+
+
+            <article class='centro' id='instrucoes'>
+                Leia a questão e clique na resposta correta
+            </article>
+
+            <article class='questoes'>
+
+                <header class='questao'>
+                    <span id='numQuestao'></span>
+                    <h2 id='pergunta'></h2>
+                </header>
+                                
+                <div class='corpo'>
+                    <ol type='A' id='alternativas'>
+                        <li id='a' value='1A' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id='b' value='1B' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id='c' value='1C' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id='d' value='1D' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                    </ol>
+
+
+                <div class="shop" id="inv">
+                    <table class="tabela">
+                        <tr>
+                            <center><td><center><p>Loja</p></center></td></center>
+                        </tr>
+                        <tr>
+                            <td>
+                <div class="botao"></div>
+                    <button><p><img src="imagens/bomba.png" class="bomb"><br /></p></button>
+                </div>
+                </div>
+                            </td>
+                            <td>
+                                
+                            </td>
+                            <td>
+                                
+                            </td>
+
+                        </tr>
+                    </table>
+                </div>
+
+
+
+                </div>
+            </article>
+
+
+            
+            <article id='aviso' class='centro'>
+                <input type="range" value='1' min='1' max='10' step='1'
+                name="progresso" id="progresso" disabled
+                /> <br>
+                <span id='numero'></span> de <span id='total'></span>
+            </article>
+
+        </section>
+
+        <a><div class="botaoac">
+            <button class="push">
+                <img src="imagens/push-button.png" alt="None">
+            </button>
+        </div></a>
+
+       <a><div class="botao">
+           <button class="bomba">
+               <img src="imagens/shop.png" alt="None" onclick="inviDiv()">
+            </button>
+       </div></a>
+
+       <div class="times">
+           <div class="amarelo">
+               <img src="imagens/timeAmarelo.jpeg" alt="None">
+           </div>
+
+           <div class="verde">
+               <img src="imagens/timeVerde.jpeg" alt="None">
+           </div>
+       </div>
+
+    </main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
